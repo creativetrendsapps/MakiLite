@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:openDrawer="end">
+
+        <include
+            layout="@layout/twitter_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+</android.support.v4.widget.DrawerLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        app:headerLayout="@layout/twitter_header"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/twitter_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

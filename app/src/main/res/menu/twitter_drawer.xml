@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    - Simplicity by creativetrendsapps. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <item
+        android:title="@string/quickaccess">
+        <menu>
+            <group android:id="@+id/quick_access" android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/close"
+                    android:title="@string/switch_to_Maki"
+                    android:icon="@drawable/facebook_box"
+                    android:orderInCategory="1"/>
+
+                <item
+                    android:id="@+id/home"
+                    android:icon="@drawable/home"
+                    android:title="@string/home"
+                    android:visible="true"
+                    android:orderInCategory="2"/>
+
+                <item
+                    android:id="@+id/notifications"
+                    android:icon="@drawable/earths_quickbar"
+                    android:title="@string/notifications"
+                    android:visible="true"
+                    android:orderInCategory="3"/>
+
+                <item
+                    android:id="@+id/messages"
+                    android:icon="@drawable/forum"
+                    android:title="@string/messages"
+                    android:visible="true"
+                    android:orderInCategory="4"/>
+
+                <item
+                    android:id="@+id/search"
+                    android:icon="@drawable/ic_search"
+                    android:title="@string/search_twitter"
+                    android:visible="true"
+                    android:orderInCategory="5"/>
+
+                <item
+                    android:id="@+id/myprofile"
+                    android:icon="@drawable/account_quickbar"
+                    android:title="@string/myprofile"
+                    android:visible="true"
+                    android:orderInCategory="6"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:id="@+id/more"
+        android:title="@string/more">
+        <menu>
+            <item
+                android:id="@+id/share"
+                android:icon="@drawable/ic_share_now"
+                android:title="@string/update_share"
+                app:showAsAction="always"
+                android:orderInCategory="0"/>
+
+            <item
+                android:id="@+id/jumpToTop"
+                android:title="@string/jumpto"
+                android:icon="@drawable/arrow_up"
+                android:orderInCategory="1"/>
+
+            <item
+                android:id="@+id/forward"
+                android:title="@string/menu_forward"
+                android:icon="@drawable/arrow_right"
+                android:orderInCategory="2"/>
+
+            <item
+                android:id="@+id/reload"
+                android:title="@string/menu_refresh"
+                android:icon="@drawable/menu_refresh"
+                android:orderInCategory="3"/>
+        </menu>
+    </item>
+
+</menu>

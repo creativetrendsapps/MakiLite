@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+	android:id="@+id/content_main_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+	<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+	<View
+		android:layout_width="match_parent"
+		android:layout_height="2dp"
+		android:layout_below="@+id/toolbar"
+		android:background="@drawable/actionbar_shadow"/>
+
+
+	<FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

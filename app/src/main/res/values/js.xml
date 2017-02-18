@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    - Simplicity by creativetrendsapps. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<resources>
+    <string name="editCss" translatable="false">
+		javascript:function addStyle(css) {
+		var node = document.createElement(\'style\');
+		node.innerHTML = css;
+        document.body.appendChild(node);
+		}
+		addStyle(\'$css\');
+	</string>
+<string name="fixMessages" translatable="false">
+		javascript:function fixMessages() {
+		var a=(document.querySelectorAll(\'#messages_jewel ._19no.touchable\'))[0];
+        a.href=\'https://slimsocial.leo\';
+        a.setAttribute(\'data-autoid\',\'\');
+		}
+		fixMessages();
+</string>
+
+	<string name="hideHeaderFooterMessages" translatable="false">
+		javascript: function hideHeaderFooterMessages(){
+	var divs = document.getElementById(\'viewport\').children;
+	for(var i = 0; i &#60; divs.length; i++) {
+		if(divs[i].id != \'objects_container\')
+		divs[i].style.display=\'none\';
+	}
+}
+hideHeaderFooterMessages();
+</string>
+
+</resources>

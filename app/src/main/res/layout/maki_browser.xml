@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sunshine.makilite.activities.MainActivity">
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="2dp"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/browser_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat">
+
+
+            <ImageView
+                android:id="@+id/upButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:src="@drawable/ic_close"
+                android:tint="@color/md_grey_900"
+                android:background="@android:color/transparent"
+                android:layout_gravity="start|center_horizontal"
+                tools:ignore="ContentDescription" />
+
+
+            <ImageButton
+                android:id="@+id/lockButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_secure"
+                android:background="@android:color/transparent"
+                android:layout_gravity="start|center_horizontal"
+                android:paddingStart="12dp"
+                android:paddingLeft="12dp"
+                tools:ignore="ContentDescription,RtlSymmetry"
+                android:visibility="gone"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingEnd="4dp"
+                android:paddingStart="4dp"
+                android:paddingTop="12dp" >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="UselessParent">
+
+                    <TextView
+                        android:id="@+id/toolbarTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="16sp"
+                        android:textColor="@color/md_grey_900"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:layout_gravity="start|center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/toolbarSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="normal"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:textSize="12sp"
+                        android:textColor="@color/md_grey_900"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:layout_gravity="start|center_horizontal" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <include layout="@layout/maki_browser_main" />
+
+    <FrameLayout
+        android:id="@+id/fullscreen_custom_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#000"
+        android:clickable="false"
+        android:visibility="gone"
+        tools:ignore="RtlCompat" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

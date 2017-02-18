@@ -1,0 +1,66 @@
+<com.sunshine.makilite.utils.SlideFinishLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustResize">
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+
+    <LinearLayout
+        android:id="@+id/content_main_tumblr"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:windowSoftInputMode="adjustResize" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="UselessParent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical"
+                tools:ignore="UselessParent" >
+                <android.support.v4.widget.SwipeRefreshLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/swipe_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="0dp"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <WebView
+                    android:id="@+id/text_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" /></android.support.v4.widget.SwipeRefreshLayout>
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</com.sunshine.makilite.utils.SlideFinishLayout>

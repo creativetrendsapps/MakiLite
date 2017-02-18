@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    - Simplicity by creativetrendsapps. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<resources>
+    <item name="BottomNavigation" type="id" />
+    <item name="bottom_bar_first" type="id"/>
+    <item name="bottom_bar_second" type="id"/>
+    <item name="bottom_bar_third" type="id"/>
+    <item name="bottom_bar_forth" type="id"/>
+</resources>

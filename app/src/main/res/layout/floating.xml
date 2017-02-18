@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/swipe_float"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1">
+
+    <WebView
+        android:id="@+id/text_box"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

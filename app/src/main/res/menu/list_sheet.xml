@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jumpToTop"
+        android:title="@string/jumpto"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/forward"
+        android:title="@string/menu_forward"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/reload"
+        android:title="@string/menu_refresh"
+        android:orderInCategory="3"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/update_share"
+        android:orderInCategory="4"/>
+
+    <item
+        android:id="@+id/favorites"
+        android:title="@string/faved"
+        android:orderInCategory="5"/>
+
+    <item
+        android:id="@+id/twitter"
+        android:title="@string/twitter"
+        android:orderInCategory="6"/>
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:orderInCategory="7"/>
+
+    <item
+        android:id="@+id/getpro"
+        android:title="@string/go_pro"
+        android:orderInCategory="8"/>
+
+</menu>

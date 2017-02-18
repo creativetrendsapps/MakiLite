@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <View
+        android:background="@drawable/shadow_three"
+        android:layout_width = "fill_parent"
+        android:layout_height="3dp"
+        android:clipToPadding="false"/>
+
+    <View
+        android:background="@color/black_semi_transparent"
+        android:layout_width = "fill_parent"
+        android:layout_height="7dp"
+        android:clipToPadding="false"/>
+
+    <View
+        android:background="@color/gradient_start"
+        android:layout_width = "fill_parent"
+        android:layout_height="0.1dp"
+        android:alpha="0.5"
+        android:clipToPadding="false"/>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<android.support.v7.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="?attr/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+

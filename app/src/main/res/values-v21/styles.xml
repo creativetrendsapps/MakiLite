@@ -1,0 +1,192 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        - Simplicity by creativetrendsapps. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <!-- DEFAULT MAKI THEME. -->
+    <style name="MakiTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+
+    </style>
+
+    <style name="MakiThemeDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="MakiBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="MakiPink" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/md_pink_300</item>
+        <item name="colorPrimaryDark">@color/md_pink_500</item>
+        <item name="android:colorPrimary">@color/md_pink_300</item>
+        <item name="android:colorPrimaryDark">@color/md_pink_500</item>
+        <item name="colorAccent">@color/md_pink_300</item>
+        <item name="colorButtonNormal">@color/md_pink_300</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+
+
+    <style name="MakiDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/dcPD</item>
+        <item name="colorPrimaryDark">@color/dcPD</item>
+        <item name="colorAccent">@color/md_grey_400</item>
+        <item name="colorButtonNormal">@color/dcP</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@color/dcP</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+
+    <style name="MakiMaterialDark" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">#292929</item>
+        <item name="colorPrimaryDark">#1f1f1f</item>
+        <item name="colorAccent">#292929</item>
+        <item name="colorButtonNormal">#292929</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowBackground">@color/dcP</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+
+    <!-- FALCON MAKI THEME -->
+    <style name="MakiFalcon" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/md_falcon_500</item>
+        <item name="colorPrimaryDark">@color/md_falcon_700</item>
+        <item name="colorAccent">@color/md_falcon_500</item>
+        <item name="colorButtonNormal">@color/md_falcon_500</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+
+    </style>
+
+    <style name="MakiTwitter" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">#55aeed</item>
+        <item name="colorPrimaryDark">#1d6599</item>
+        <item name="colorAccent">#55aeed</item>
+        <item name="colorButtonNormal">#55aeed</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+
+    </style>
+
+    <!-- LIGHT BLUE MAKI THEME -->
+    <style name="MakiLightBlue" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">@color/md_light_blue_500</item>
+        <item name="colorPrimaryDark">@color/md_light_blue_700</item>
+        <item name="colorAccent">@color/md_light_blue_500</item>
+        <item name="colorButtonNormal">@color/md_light_blue_500</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+
+    <!-- GOOGLE+ THEME -->
+    <style name="GooglePlus" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="colorPrimary">#d94338</item>
+        <item name="colorPrimaryDark">#c23a2b</item>
+        <item name="colorAccent">#d94338</item>
+        <item name="colorButtonNormal">#d94338</item>
+        <item name="colorControlHighlight">@color/colorTransparent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+    </style>
+
+    <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="Custom" parent="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MakiCrash" parent="@style/Custom">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+
+    <style name="CustomDialogTheme" parent="@style/Base.Theme.AppCompat.Light.Dialog.FixedSize">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MessengerBlue" parent="@style/MakiTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+</resources>
+

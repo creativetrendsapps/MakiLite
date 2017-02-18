@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sunshine.makilite.pin.SquareImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pin_code_round"
+    android:layout_width="0dp"
+    android:layout_height="12dp"
+    android:layout_margin="@dimen/pin_code_round_margin"
+    android:layout_weight="1"
+    android:maxHeight="15dp"
+    android:maxWidth="15dp"
+    tools:src="@drawable/pin_code_round_empty" />

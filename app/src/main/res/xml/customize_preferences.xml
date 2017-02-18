@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    - Simplicity by creativetrendsapps. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+ <com.sunshine.makilite.preferences.PreferenceCategory
+		android:title="@string/preference_category3">
+        
+    
+   <com.sunshine.makilite.preferences.ListPreferenceCompat
+            android:entries="@array/pref_theme_fb_entries"
+            android:entryValues="@array/pref_theme_values_free"
+            android:key="theme_preference_fb"
+            android:summary="@string/choose_theme_Maki_hint"
+            android:title="@string/choose_theme_facebook"
+            android:defaultValue="makiclassic" />
+    
+            
+    </com.sunshine.makilite.preferences.PreferenceCategory>
+
+    <com.sunshine.makilite.preferences.PreferenceCategory
+        android:title="@string/preference_category4">
+
+        <com.sunshine.makilite.preferences.ListPreferenceCompat
+            android:entries="@array/pref_theme_entries"
+            android:entryValues="@array/pref_theme_values"
+            android:key="theme_preference"
+            android:summary="@string/choose_theme_Maki_hint"
+            android:title="@string/choose_theme_Maki"
+            android:defaultValue="maki" />
+
+        <Preference
+            android:key="pro1"
+            android:summary="@string/more_themes_hint"
+            android:title="@string/more_themes" />
+    </com.sunshine.makilite.preferences.PreferenceCategory>
+            
+    <com.sunshine.makilite.preferences.PreferenceCategory
+		android:title="@string/preference_facebook_layouts">
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="no_images"
+            android:title="@string/no_images"
+            android:summary="@string/no_images_hint"
+            android:defaultValue="false"/> 
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="hide_people"
+            android:title="@string/people_you"
+            android:summary="@string/people_you_hint"
+            android:defaultValue="false"/>
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="hide_news_feed"
+            android:title="@string/hide_news_feed"
+            android:summary="@string/hide_news_feed_description"
+            android:defaultValue="false"/>
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="hide_editor_newsfeed"
+            android:summary="@string/hide_editor_newsfeed_summary"
+            android:title="@string/hide_editor_newsfeed_title" />
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="pref_centerTextPosts"
+            android:summary="@string/summary_centerTextPosts"
+            android:title="@string/title_centerTextPosts"/>
+
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="pref_addSpaceBetweenPosts"
+            android:summary="@string/summary_pro"
+            android:title="@string/title_addSpaceBetweenPosts"/>
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:enabled="false"
+            android:key="pref_hideSponsoredPosts"
+            android:summary="@string/summary_pro"
+            android:title="@string/title_hideSponsoredPosts"/>
+
+    </com.sunshine.makilite.preferences.PreferenceCategory>
+    
+    
+
+    
+    <com.sunshine.makilite.preferences.PreferenceCategory
+        android:title="@string/preference_category15">
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="show_fab"
+            android:title="@string/show_fab"
+            android:defaultValue="true" />
+
+
+        <com.sunshine.makilite.preferences.ListPreferenceCompat
+            android:id="@+id/chooseNavigation"
+            android:entries="@array/pref_navigation_style"
+            android:entryValues="@array/pref_navigation"
+            android:key="pref_navigation"
+            android:summary="@string/navigation_choice_hint"
+            android:title="@string/navigation_choice"
+            android:defaultValue="bottom_four" />
+
+        <Preference
+            android:key="pro2"
+            android:summary="@string/more_navigation_hint"
+            android:title="@string/more_navigation" />
+
+
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="lock_portrait"
+            android:title="@string/lock_portrait"
+            android:summary="@string/lock_portrait_hint"
+            android:defaultValue="false" />
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="show_webview"
+            android:title="@string/hide_web"
+            android:summary="@string/hide_web_hint"
+            android:defaultValue="true" />
+
+
+    </com.sunshine.makilite.preferences.PreferenceCategory>
+
+
+</PreferenceScreen>

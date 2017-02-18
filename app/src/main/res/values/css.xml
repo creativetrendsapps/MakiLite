@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+   Code taken from:
+   - Folio for Facebook by creativetrendsapps. Thank you!
+   - Simple for Facebook by creativetrendsapps. Thank you!
+   - FaceSlim by indywidualny. Thank you!
+   - Toffed by JakeLane. Thank you!
+   - SlimSocial by  Leonardo Rignanese. Thank you!
+   - MaterialFBook by ZeeRooo. Thank you!
+   - Simplicity by creativetrendsapps. Thank you!
+   Copyright notice must remain here if you're using any part of this code.
+   -->
+<resources>
+	<string name="centerTextPosts" translatable="false">
+		._5rgt._5msi {
+		text-align: center;
+		}
+	</string>
+	<string name="addSpaceBetweenPosts" translatable="false">
+		article {
+		margin-top: 50px !important;
+		}
+	</string>
+	<string name="fixedBar" translatable="false">
+		#header{ position: fixed; z-index: 12; top: 0px; }
+
+        #root{ padding-top: 44px; }
+
+        .flyout{ max-height: $spx; overflow-y: scroll;  }
+
+        /*lock the "show all.." message*/
+		.item.more {
+		position: fixed;
+		bottom: 0px;
+		text-align: center !important;
+		}
+	</string>
+	<string name="removeMessengerDownload" translatable="false">
+		._s15 {
+		display: none;
+		}
+
+        input{
+        -webkit-user-select: text;
+        }
+
+        [data-sigil*=m-promo-jewel-header]{ display: none; }
+	</string>
+
+    <string name="hideAdsAndPeopleYouMayKnow" translatable="false">
+		#m_newsfeed_stream article[data-ft*=\"\\\\\"ei\\\\\":\\\\\"\"] { display:none !important;}
+	</string>
+
+
+</resources>

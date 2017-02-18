@@ -1,0 +1,50 @@
+<menu 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" 
+    tools:context=".MainActivity">
+	<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+	<item
+		android:id="@+id/action_notifications"
+		android:title="@string/notifications"
+		app:actionLayout="@layout/menu_badge"
+		android:orderInCategory="2"
+		app:showAsAction="always"
+		android:icon="@drawable/notification"
+		tools:ignore="AlwaysShowAction"/>
+    
+    <item 
+        android:id="@+id/action_messages"
+        android:title="@string/messages"
+        app:actionLayout="@layout/menu_badge"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+		android:icon="@drawable/message_outline"
+        tools:ignore="AlwaysShowAction"/>
+        
+    <item 
+        android:id="@+id/search"
+        android:title="@string/search"
+        android:icon="@drawable/ic_search"
+        android:orderInCategory="0"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
+
+	<item
+		android:id="@+id/menu"
+		android:title="@string/menu"
+		android:icon="@drawable/dots_vertical"
+		android:orderInCategory="3"
+		app:showAsAction="always"
+		tools:ignore="AlwaysShowAction"/>
+
+</menu>

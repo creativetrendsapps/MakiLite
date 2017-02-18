@@ -1,0 +1,88 @@
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        - Simplicity by creativetrendsapps. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <com.sunshine.makilite.preferences.PreferenceCategory
+        android:title="@string/notifications_settings">
+        
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="quickbar_pref"
+            android:title="@string/quick_bar"
+            android:defaultValue="false"/>
+        
+        
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="notifications_activated"
+            android:title="@string/activate_notifications"
+            android:defaultValue="false"/>
+        
+        
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="messages_activated"
+            android:title="@string/activate_messages"
+            android:defaultValue="false"/>
+        
+
+        <RingtonePreference
+            android:key="ringtone"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:title="@string/notification_sound"
+            android:summary="@string/notification_sound_description" />
+
+        <RingtonePreference
+            android:key="ringtone_msg"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:title="@string/message_sound"
+            android:summary="@string/message_sound_description" />
+
+               
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="vibrate"
+            android:title="@string/vibrate"
+            android:defaultValue="true"/>
+
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="led_light"
+            android:title="@string/led_light"
+            android:defaultValue="true"/>
+        
+
+        
+        <com.sunshine.makilite.preferences.ListPreferenceCompat
+        	android:key="interval_pref"
+       		android:title="@string/interval_pref"
+        	android:summary="@string/interval_pref_description"
+        	android:entries="@array/update_interval"
+        	android:entryValues="@array/update_interval_values"
+            android:defaultValue="1800000"/>
+        
+        
+        <com.sunshine.makilite.preferences.SwitchPreferenceCompat
+            android:key="notifications_everywhere"
+            android:title="@string/notifications_everywhere"
+            android:summary="@string/notifications_everywhere_description"
+            android:defaultValue="true"/>
+        
+
+        
+       </com.sunshine.makilite.preferences.PreferenceCategory>
+        
+
+
+</PreferenceScreen>

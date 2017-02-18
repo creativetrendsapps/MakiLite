@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    - Simplicity by creativetrendsapps. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.sunshine.makilite"
+    android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission
+        android:name="android.permission.ACCESS_COARSE_LOCATION"
+        android:required="false" />
+
+    <application
+        android:name=".activities.MakiApplication"
+        android:allowBackup="false"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MakiTheme"
+        tools:replace="android:allowBackup">
+
+        <receiver
+            android:name=".notifications.MakiReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".notifications.MakiNotifications"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@mipmap/ic_launcher"/>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustResize">
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="m.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="m.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="m.facebook.com/messages"
+                    android:scheme="http" />
+                <data
+                    android:host="m.facebook.com/messages"
+                    android:scheme="https" />
+                <data
+                    android:host="m.facebook.com/messages/thread"
+                    android:scheme="http" />
+                <data
+                    android:host="m.facebook.com/messages/thread"
+                    android:scheme="https" />
+                <data
+                    android:host="m.fb.com"
+                    android:scheme="http" />
+                <data
+                    android:host="m.fb.com"
+                    android:scheme="https" />
+                <data
+                    android:host="touch.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="touch.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="touch.fb.com"
+                    android:scheme="http" />
+                <data
+                    android:host="touch.fb.com"
+                    android:scheme="https" />
+                <data
+                    android:host="facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="fb.com"
+                    android:scheme="http" />
+                <data
+                    android:host="fb.com"
+                    android:scheme="https" />
+                <data
+                    android:host="www.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="www.fb.com"
+                    android:scheme="http" />
+                <data
+                    android:host="www.fb.com"
+                    android:scheme="https" />
+                <data
+                    android:host="apps.facebook.com"
+                    android:scheme="http" />
+                <data
+                    android:host="apps.facebook.com"
+                    android:scheme="https" />
+                <data
+                    android:host="apps.fb.com"
+                    android:scheme="http" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.BrandScreen"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@style/MakiStart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.MULTIWINDOW_LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MakiBrowser"
+            android:parentActivityName=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:theme="@style/MakiBrowserTheme" tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".activities.MainActivity" />
+
+        </activity>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="@string/settings"
+            android:theme="@style/MakiTheme"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:parentActivityName=".activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MakiTheme"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.SettingsActivity" />
+        </activity>
+        <activity
+            android:name=".activities.TwitterActivity"
+            android:configChanges="screenSize|orientation"
+            android:label="Twitter"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/MakiTwitter"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+
+        </activity>
+        <activity
+            android:name=".activities.QuickInstagram"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.FloatingWindow.Popup"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:ignore="ExportedActivity" />
+        <activity
+            android:name=".activities.QuickFacebook"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.FloatingWindow.Popup"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:ignore="ExportedActivity" />
+        <activity
+            android:name=".activities.QuickTwitter"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.FloatingWindow.Popup"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:ignore="ExportedActivity" />
+
+        <activity
+            android:name=".activities.QuickVK"
+            android:clearTaskOnLaunch="true"
+            android:configChanges="orientation|screenSize"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.FloatingWindow.Popup"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden"
+            tools:ignore="ExportedActivity" />
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:launchMode="singleInstance"
+            android:process=":error_report"
+            android:theme="@style/MakiCrash" />
+        <activity
+            android:name=".activities.Messenger"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:label="@string/messages"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/MessengerBlue"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MessagesActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:label="@string/messages"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/MessengerBlue"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".activities.MessagesTouchActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:label="@string/messages"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/MessengerBlue"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.StandartMessages"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:label="@string/messages"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/MessengerBlue"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.MessagesDesktopActivity"
+            android:configChanges="keyboard|keyboardHidden|screenSize|orientation|locale"
+            android:label="@string/messages"
+            android:launchMode="singleTask"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/MessengerBlue"
+            tools:ignore="UnusedAttribute">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.sunshine.makilite.activities.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activities.PhotoViewer"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/photos"
+            android:theme="@style/MakiDark" />
+
+
+
+        <provider
+            android:name="net.grandcentrix.tray.provider.TrayProvider"
+            android:authorities="@string/tray__authority"
+            android:exported="false"
+            android:multiprocess="false" />
+
+        <activity
+            android:name=".activities.CustomPinActivity"
+            android:theme="@style/MakiTheme"/>
+        <activity
+            android:name=".activities.IntroActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FullscreenTheme"/>
+
+        <uses-library
+            android:name="com.sec.android.app.multiwindow"
+            android:required="false"/>
+
+        <meta-data
+            android:name="com.sec.android.support.multiwindow"
+            android:value="true" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_W"
+            android:resource="@dimen/app_defaultsize_w" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.DEFAULT_SIZE_H"
+            android:resource="@dimen/app_defaultsize_h" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_W"
+            android:resource="@dimen/app_minimumsize_w" />
+        <meta-data
+            android:name="com.sec.android.multiwindow.MINIMUM_SIZE_H"
+            android:resource="@dimen/app_minimumsize_h" />
+
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+       App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

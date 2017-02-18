@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/jumpToTop"
+        android:title="@string/jumpto"
+        android:icon="@drawable/arrow_up"
+        android:orderInCategory="1"/>
+
+    <item
+        android:id="@+id/forward"
+        android:title="@string/menu_forward"
+        android:icon="@drawable/arrow_right"
+        android:orderInCategory="2"/>
+
+    <item
+        android:id="@+id/reload"
+        android:title="@string/menu_refresh"
+        android:icon="@drawable/menu_refresh"
+        android:orderInCategory="3"/>
+
+    <item
+        android:id="@+id/share"
+        android:title="@string/update_share"
+        android:icon="@drawable/share_page"
+        android:orderInCategory="4"/>
+
+    <item
+        android:id="@+id/favorites"
+        android:title="@string/faved"
+        android:icon="@drawable/heart_outline"
+        android:orderInCategory="5"/>
+
+    <item
+        android:id="@+id/twitter"
+        android:icon="@drawable/twitter"
+        android:title="@string/twitter"
+        android:orderInCategory="6"/>
+
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="7"/>
+
+    <item
+        android:id="@+id/getpro"
+        android:title="@string/go_pro"
+        android:icon="@drawable/ic_donate"
+        android:orderInCategory="8"/>
+
+</menu>

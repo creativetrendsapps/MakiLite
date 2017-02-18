@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+    Code taken from:
+    - Folio for Facebook by creativetrendsapps. Thank you!
+    - Simple for Facebook by creativetrendsapps. Thank you!
+    - FaceSlim by indywidualny. Thank you!
+    - Toffed by JakeLane. Thank you!
+    - SlimSocial by  Leonardo Rignanese. Thank you!
+    - MaterialFBook by ZeeRooo. Thank you!
+    - Simplicity by creativetrendsapps. Thank you!
+    Copyright notice must remain here if you're using any part of this code.
+    -->
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/photo_save"
+        android:title="@string/context_save_image"
+        android:icon="@drawable/ic_download"
+        android:orderInCategory="1"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
+
+    <item
+        android:id="@+id/share_image"
+        android:title="@string/context_share_image"
+        android:icon="@drawable/ic_share_now"
+        android:orderInCategory="2"
+        app:showAsAction="always"
+        tools:ignore="AlwaysShowAction"/>
+
+    <item
+        android:id="@+id/photo_copy"
+        android:title="@string/context_copy_image_link"
+        android:orderInCategory="4"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/share_link"
+        android:title="@string/context_share_link"
+        android:orderInCategory="5"
+        tools:ignore="HardcodedText"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/photo_open"
+        android:title="@string/open_in"
+        android:orderInCategory="6"
+        app:showAsAction="never"
+        tools:ignore="HardcodedText"/>
+
+</menu>

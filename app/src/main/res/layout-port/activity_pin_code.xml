@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?attr/colorPrimary">
+    <!--Copyright (C) 2016-2017  Roman Savchyn/Sunshine Apps
+        Code taken from:
+        - Folio for Facebook by creativetrendsapps. Thank you!
+        - Simple for Facebook by creativetrendsapps. Thank you!
+        - FaceSlim by indywidualny. Thank you!
+        - Toffed by JakeLane. Thank you!
+        - SlimSocial by  Leonardo Rignanese. Thank you!
+        - MaterialFBook by ZeeRooo. Thank you!
+        Copyright notice must remain here if you're using any part of this code.
+        -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainpin"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:id="@+id/relativeLayout"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.sunshine.makilite.ui.RoundImage
+                android:id="@+id/profile_pic_password"
+                android:layout_gravity="center"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                app:maskDrawable="@drawable/circle_mask"
+                tools:ignore="HardcodedText"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="35dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:visibility="gone" />
+
+            <com.sunshine.makilite.ui.RoundImage
+                android:id="@+id/roundImage"
+                android:layout_gravity="center"
+                android:contentDescription="Profile Picture"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher"
+                app:maskDrawable="@drawable/circle_mask"
+                tools:ignore="HardcodedText"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+
+            <com.sunshine.makilite.pin.PinCodeRoundView
+                android:id="@+id/pin_code_round_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/profile_name_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|bottom"
+                android:text="@string/locked"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                tools:ignore="HardcodedText"
+                android:textSize="22sp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Please, enter your passcode"
+                android:id="@+id/textView2"
+                android:textColor="#ffffff"
+                android:layout_gravity="right|bottom"
+                android:layout_below="@+id/profile_name_password"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/pin_code_fingerprint_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_fp_40px"
+                android:layout_alignTop="@+id/pin_code_round_view"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="7dp" />
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:id="@+id/pin_code_fingerprint_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:text="@string/pin_code_fingerprint_text"
+                android:paddingBottom="10dp"
+                android:layout_below="@+id/pin_code_fingerprint_imageview"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp">
+
+            <com.sunshine.makilite.ui.KeyboardView
+                android:id="@+id/pin_code_keyboard_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp" />
+
+
+            <com.github.omadahealth.typefaceview.TypefaceTextView
+                android:id="@+id/pin_code_step_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/dark_grey_color"
+                android:textSize="@dimen/pin_code_step_text_size"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp"
+                android:visibility="gone" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</ScrollView>
