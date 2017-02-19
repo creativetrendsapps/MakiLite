@@ -18,7 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import static com.sunshine.makilite.preferences.ThemeUtils.resolveAccentColor;
+import static com.sunshine.makilite.utils.ThemeUtils.resolveAccentColor;
 import static com.sunshine.makilite.preferences.Typefaces.getRobotoMedium;
 
 import com.sunshine.makilite.R;
