@@ -237,14 +237,7 @@ public class TwitterActivity extends PinCompatActivity {
 
                 } else if (Uri.parse(url).getHost().endsWith("twitter.com")
                         || Uri.parse(url).getHost().endsWith("m.twitter.com")
-                        || Uri.parse(url).getHost().endsWith("mobile.twitter.com")
-                        || Uri.parse(url).getHost().endsWith("mobile.twitter.com/messages")
-                        || Uri.parse(url).getHost().endsWith("m.twitter.com/messages")
-                        || Uri.parse(url).getHost().endsWith("h.twitter.com")
-                        || Uri.parse(url).getHost().endsWith("l.twitter.com")
-                        || Uri.parse(url).getHost().endsWith("0.twitter.com")
-                        || Uri.parse(url).getHost().endsWith("zero.twitter.com")
-                        || Uri.parse(url).getHost().endsWith("googleusercontent.com")) {
+                        || Uri.parse(url).getHost().endsWith("mobile.twitter.com")){
                     return false;
 
 
