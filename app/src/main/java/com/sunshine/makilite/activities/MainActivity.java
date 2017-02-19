@@ -919,7 +919,7 @@ public class MainActivity extends PinCompatActivity implements View.OnLongClickL
             });
 //What's new
             final SharedPreferences makimain = getSharedPreferences(PREFS_JELLY_BEAN_WARNING, 0);
-            boolean whats_new = makimain.getBoolean("whats_new_9", false);
+            boolean whats_new = makimain.getBoolean("whats_new_8", false);
             try {
                 if (!whats_new) {
                     new Handler().postDelayed(new Runnable() {
@@ -931,14 +931,14 @@ public class MainActivity extends PinCompatActivity implements View.OnLongClickL
                                 @Override
                                 public void onDismissed(Snackbar snackbar, int event) {
                                     SharedPreferences.Editor editor = makimain.edit();
-                                    editor.putBoolean("whats_new_9", true);
+                                    editor.putBoolean("whats_new_8", true);
                                     editor.apply();
                                 }
 
                                 @Override
                                 public void onShown(Snackbar snackbar) {
                                     SharedPreferences.Editor editor = makimain.edit();
-                                    editor.putBoolean("whats_new_9", true);
+                                    editor.putBoolean("whats_new_8", true);
                                     editor.apply();
 
                                 }
