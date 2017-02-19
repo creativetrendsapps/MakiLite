@@ -424,8 +424,6 @@ public class QuickVK extends AppCompatActivity {
         } else {
             getWindow().setLayout((int) (width * .7), (int) (height * .8));
         }
-        {
-
-        }
+       
     }
 }
