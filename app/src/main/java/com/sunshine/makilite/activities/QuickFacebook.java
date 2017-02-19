@@ -638,9 +638,7 @@ public class QuickFacebook extends AppCompatActivity {
         } else {
             getWindow().setLayout((int) (width * .7), (int) (height * .8));
         }
-        {
-
-        }
+       
     }
 
     private void injectDefaultCSS(String mode) {
