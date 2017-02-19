@@ -55,25 +55,25 @@ public final class PreferencesUtility {
 
 
 
-    public String getTheme(){ return mPreferences.getString(THEME_PREFERNCE, "maki"); }
+    public String getTheme(){ return mPreferences.getString(THEME_PREFERNCE, ""); }
     
     public String getFont(){
-        return mPreferences.getString(FONT_SIZE, "default_font");
+        return mPreferences.getString(FONT_SIZE, "");
     }
 
     public String getNavigation(){
-        return mPreferences.getString(NAVIGATION, "bottom_four");
+        return mPreferences.getString(NAVIGATION, "r");
     }
 
     public String getMessages(){
-        return mPreferences.getString(MESSAGES, "default_message");
+        return mPreferences.getString(MESSAGES, "e");
     }
 
     public String getFeed(){
-        return mPreferences.getString(NEWS_FEED, "default_news");
+        return mPreferences.getString(NEWS_FEED, "");
     }
     
-    public String getFreeTheme(){ return mPreferences.getString(FACEBOOK_THEMES, "materialtheme"); }
+    public String getFreeTheme(){ return mPreferences.getString(FACEBOOK_THEMES, ""); }
 
    public static boolean getBoolean(String key, boolean defValue){
 	return PreferenceManager.getDefaultSharedPreferences(MakiApplication.getContextOfApplication()).getBoolean(key, defValue);
